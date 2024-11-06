@@ -1,0 +1,36 @@
+/* Container for centering the canvas and button */
+.recorder-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styling for the wave canvas */
+#waveCanvas {
+    width: 100%;
+    height: 150px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Microphone button styling */
+.mic-btn {
+    font-size: 2rem;
+    width: 75px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+/* Change button color during recording */
+.mic-btn.recording {
+    background-color: #ff0000;
+}
